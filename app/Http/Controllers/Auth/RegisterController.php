@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Users\EmailController;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\{DB,
-    Validator, 
+    Validator,
     Auth
 };
 use Illuminate\Http\Request;
@@ -15,7 +15,8 @@ use App\Models\{RoleUser,
     Setting,
     QrCode,
     User,
-    Role
+    Role,
+    Deposit
 };
 use Exception;
 use Illuminate\Support\Str;
@@ -68,7 +69,7 @@ class RegisterController extends Controller
                     'password_confirmation' => 'required',
                     'g-recaptcha-response'  => 'required|captcha',
                 );
-                
+
                 $fieldNames = array(
                     'first_name'            => 'First Name',
                     'last_name'             => 'Last Name',

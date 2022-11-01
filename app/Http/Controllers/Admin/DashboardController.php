@@ -11,7 +11,9 @@ use App\Models\{Currency,
     Dispute,
     Wallet,
     Ticket,
-    User
+    User,
+    Deposit
+
 };
 
 class DashboardController extends Controller

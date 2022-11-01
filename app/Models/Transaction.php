@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Currency;
+use App\Models\Deposit;
 use App\Models\Merchant;
 use App\Models\MerchantPayment;
 use App\Models\PaymentMethod;
